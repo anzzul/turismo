@@ -1,0 +1,150 @@
+/* Reset */
+.tarjeta-turistica {
+    background-color: #e0f2f1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #00796b, #004d40);
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Submenu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: #00695c;
+    top: 50px;
+    left: 0;
+    min-width: 200px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 10px 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    font-weight: normal;
+}
+
+nav ul li ul li a:hover {
+    background: #004d40;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #00695c;
+    border-left: 5px solid #004d40;
+    padding-left: 10px;
+    margin: 40px 0 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #004d40;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li ul {
+        position: static;
+        box-shadow: none;
+        background: #004d40;
+    }
+
+    nav ul li ul li a {
+        padding: 10px;
+    }
+
+    main {
+        padding: 0 15px;
+    }
+}

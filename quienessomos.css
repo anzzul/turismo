@@ -1,0 +1,70 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header vacío (puedes agregar logo o navegación luego) */
+header {
+    height: 60px;
+    background: #004d40;
+    margin-bottom: 30px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #00796b;
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Contenedor padre con texto e imagen lado a lado */
+.Padre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Texto */
+.Padre p {
+    flex: 1;
+    font-size: 18px;
+    color: #444;
+}
+
+/* Imagen */
+.Padre img {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    object-fit: cover;
+}
+
+/* Responsive para móviles: que apile el texto y la imagen */
+@media (max-width: 768px) {
+    .Padre {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .Padre img {
+        max-width: 100%;
+    }
+}
